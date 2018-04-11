@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="TestNgSuite">
+	<test name = "learnSelenium">
+		<classes>
+			<!-- <class name="com.zxp.test.SeleniumActionTest"/>
+			<class name="com.zxp.test.TakeScreenshotTest"/> -->
+			<class name="com.zxp.test.SeleniumTest"/>
+		</classes>
+		
+	</test>
+	<!-- <test name = "Screenshot">
+		<classes>
+			<class name="com.zxp.test.TakeScreenshotTest"/>
+		</classes>
+		
+	</test> -->
+</suite>
