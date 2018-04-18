@@ -1,25 +1,117 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results skipped="0" failed="0" ignored="0" total="1" passed="1">
+<testng-results skipped="0" failed="0" ignored="1" total="7" passed="6">
   <reporter-output>
+    <line>
+      <![CDATA[测试方法[ test1() ]开始]]>
+    </line>
+    <line>
+      <![CDATA[测试方法[ test1() ]结束]]>
+    </line>
+    <line>
+      <![CDATA[测试方法[ test2() ]开始]]>
+    </line>
+    <line>
+      <![CDATA[测试方法[ test2() ]结束]]>
+    </line>
+    <line>
+      <![CDATA[测试方法[ test3() ]开始]]>
+    </line>
+    <line>
+      <![CDATA[测试方法[ test3() ]结束]]>
+    </line>
+    <line>
+      <![CDATA[测试方法[ testAlert() ]开始]]>
+    </line>
+    <line>
+      <![CDATA[测试方法[ testAlert() ]结束]]>
+    </line>
+    <line>
+      <![CDATA[测试方法[ testChangeColor() ]开始]]>
+    </line>
+    <line>
+      <![CDATA[测试方法[ testChangeColor() ]结束]]>
+    </line>
+    <line>
+      <![CDATA[测试方法[ testScript() ]开始]]>
+    </line>
+    <line>
+      <![CDATA[测试方法[ testScript() ]结束]]>
+    </line>
   </reporter-output>
-  <suite name="Default suite" duration-ms="5524" started-at="2018-03-30T07:41:34Z" finished-at="2018-03-30T07:41:39Z">
+  <suite name="TestNgSuite" duration-ms="112608" started-at="2018-04-16T07:20:55Z" finished-at="2018-04-16T07:22:47Z">
     <groups>
     </groups>
-    <test name="Default test" duration-ms="5524" started-at="2018-03-30T07:41:34Z" finished-at="2018-03-30T07:41:39Z">
-      <class name="com.zxp.test.LoginTest">
-        <test-method status="PASS" signature="beforeClass()[pri:0, instance:com.zxp.test.LoginTest@f6c48ac]" name="beforeClass" is-config="true" duration-ms="4074" started-at="2018-03-30T15:41:34Z" finished-at="2018-03-30T15:41:38Z">
+    <test name="learnSelenium" duration-ms="112608" started-at="2018-04-16T07:20:55Z" finished-at="2018-04-16T07:22:47Z">
+      <class name="com.zxp.test.SeleniumTest">
+        <test-method status="PASS" signature="beforeClass()[pri:0, instance:com.zxp.test.SeleniumTest@6093dd95]" name="beforeClass" is-config="true" duration-ms="4655" started-at="2018-04-16T15:20:55Z" finished-at="2018-04-16T15:20:59Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- beforeClass -->
-        <test-method status="PASS" signature="loginTest()[pri:0, instance:com.zxp.test.LoginTest@f6c48ac]" name="loginTest" duration-ms="1431" started-at="2018-03-30T15:41:38Z" finished-at="2018-03-30T15:41:39Z">
+        <test-method status="PASS" signature="test1()[pri:0, instance:com.zxp.test.SeleniumTest@6093dd95]" name="test1" duration-ms="3014" started-at="2018-04-16T15:20:59Z" finished-at="2018-04-16T15:21:02Z">
           <reporter-output>
+            <line>
+              <![CDATA[测试方法[ test1() ]开始]]>
+            </line>
+            <line>
+              <![CDATA[测试方法[ test1() ]结束]]>
+            </line>
           </reporter-output>
-        </test-method> <!-- loginTest -->
-        <test-method status="PASS" signature="afterClass()[pri:0, instance:com.zxp.test.LoginTest@f6c48ac]" name="afterClass" is-config="true" duration-ms="0" started-at="2018-03-30T15:41:39Z" finished-at="2018-03-30T15:41:39Z">
+        </test-method> <!-- test1 -->
+        <test-method status="PASS" signature="test2()[pri:0, instance:com.zxp.test.SeleniumTest@6093dd95]" name="test2" duration-ms="11019" started-at="2018-04-16T15:21:02Z" finished-at="2018-04-16T15:21:13Z">
+          <reporter-output>
+            <line>
+              <![CDATA[测试方法[ test2() ]开始]]>
+            </line>
+            <line>
+              <![CDATA[测试方法[ test2() ]结束]]>
+            </line>
+          </reporter-output>
+        </test-method> <!-- test2 -->
+        <test-method status="PASS" signature="test3()[pri:0, instance:com.zxp.test.SeleniumTest@6093dd95]" name="test3" duration-ms="21345" started-at="2018-04-16T15:21:13Z" finished-at="2018-04-16T15:21:35Z">
+          <reporter-output>
+            <line>
+              <![CDATA[测试方法[ test3() ]开始]]>
+            </line>
+            <line>
+              <![CDATA[测试方法[ test3() ]结束]]>
+            </line>
+          </reporter-output>
+        </test-method> <!-- test3 -->
+        <test-method status="PASS" signature="testAlert()[pri:0, instance:com.zxp.test.SeleniumTest@6093dd95]" name="testAlert" duration-ms="22987" started-at="2018-04-16T15:21:35Z" finished-at="2018-04-16T15:21:58Z">
+          <reporter-output>
+            <line>
+              <![CDATA[测试方法[ testAlert() ]开始]]>
+            </line>
+            <line>
+              <![CDATA[测试方法[ testAlert() ]结束]]>
+            </line>
+          </reporter-output>
+        </test-method> <!-- testAlert -->
+        <test-method status="PASS" signature="testChangeColor()[pri:0, instance:com.zxp.test.SeleniumTest@6093dd95]" name="testChangeColor" duration-ms="22205" started-at="2018-04-16T15:21:58Z" finished-at="2018-04-16T15:22:20Z">
+          <reporter-output>
+            <line>
+              <![CDATA[测试方法[ testChangeColor() ]开始]]>
+            </line>
+            <line>
+              <![CDATA[测试方法[ testChangeColor() ]结束]]>
+            </line>
+          </reporter-output>
+        </test-method> <!-- testChangeColor -->
+        <test-method status="PASS" signature="testScript()[pri:0, instance:com.zxp.test.SeleniumTest@6093dd95]" name="testScript" duration-ms="26562" started-at="2018-04-16T15:22:20Z" finished-at="2018-04-16T15:22:46Z">
+          <reporter-output>
+            <line>
+              <![CDATA[测试方法[ testScript() ]开始]]>
+            </line>
+            <line>
+              <![CDATA[测试方法[ testScript() ]结束]]>
+            </line>
+          </reporter-output>
+        </test-method> <!-- testScript -->
+        <test-method status="PASS" signature="afterClass()[pri:0, instance:com.zxp.test.SeleniumTest@6093dd95]" name="afterClass" is-config="true" duration-ms="786" started-at="2018-04-16T15:22:46Z" finished-at="2018-04-16T15:22:47Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- afterClass -->
-      </class> <!-- com.zxp.test.LoginTest -->
-    </test> <!-- Default test -->
-  </suite> <!-- Default suite -->
+      </class> <!-- com.zxp.test.SeleniumTest -->
+    </test> <!-- learnSelenium -->
+  </suite> <!-- TestNgSuite -->
 </testng-results>

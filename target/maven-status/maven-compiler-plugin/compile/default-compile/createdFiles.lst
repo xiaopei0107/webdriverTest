@@ -1,2 +1,8 @@
-com\zxp\test\App.class
-com\zxp\test\Demo1.class
+com\zxp\ChromeTest.class
+com\zxp\SeleniumTest.class
+com\zxp\IETest.class
+com\zxp\InstallCert$SavingTrustManager.class
+com\zxp\InstallCert.class
+com\zxp\LoginTest.class
+com\zxp\SeleniumActionTest.class
+com\zxp\TakeScreenshotTest.class
