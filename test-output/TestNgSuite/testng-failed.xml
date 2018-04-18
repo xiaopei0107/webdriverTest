@@ -1,27 +1,19 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
-<suite name="Failed suite [TestNgSuite]">
+<suite guice-stage="DEVELOPMENT" name="Failed suite [TestNgSuite]">
   <test name="learnSelenium(failed)">
     <classes>
-      <class name="com.zxp.test.SeleniumActionTest">
-        <methods>
-          <include name="afterClass"/>
-          <include name="beforeClass"/>
-        </methods>
-      </class> <!-- com.zxp.test.SeleniumActionTest -->
       <class name="com.zxp.test.SeleniumTest">
         <methods>
-          <include name="afterClass"/>
+          <include name="test3"/>
+          <include name="testAlert"/>
+          <include name="testChangeColor"/>
+          <include name="testScript"/>
           <include name="beforeClass"/>
           <include name="test2"/>
+          <include name="test1"/>
         </methods>
       </class> <!-- com.zxp.test.SeleniumTest -->
-      <class name="com.zxp.test.TakeScreenshotTest">
-        <methods>
-          <include name="afterClass"/>
-          <include name="beforeClass"/>
-        </methods>
-      </class> <!-- com.zxp.test.TakeScreenshotTest -->
     </classes>
   </test> <!-- learnSelenium(failed) -->
 </suite> <!-- Failed suite [TestNgSuite] -->
