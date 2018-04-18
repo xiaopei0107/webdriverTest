@@ -9,12 +9,7 @@
 
   <name>webdriverTest</name>
   <url>http://maven.apache.org</url>
-
-  <properties>
-    <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
-  </properties>
-
-  <dependencies>
+<dependencies>
     <dependency>
       <groupId>junit</groupId>
       <artifactId>junit</artifactId>
@@ -47,7 +42,6 @@
          <groupId>org.testng</groupId>
          <artifactId>testng</artifactId>
          <version>6.11</version>
-         <scope>test</scope>
      </dependency>
    
   </dependencies>
