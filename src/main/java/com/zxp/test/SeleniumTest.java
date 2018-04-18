@@ -76,7 +76,7 @@ public class SeleniumTest {
 	/**
 	 * 一般来说，自动化也是尽量在一个页面做完相关测试，才会切换到其他页面
 	 */
-	@Test
+	@Test(enabled=false)
 	public void test3() {
 		try {
 			Reporter.log("测试方法[ test3() ]开始");
@@ -118,7 +118,7 @@ public class SeleniumTest {
 		}
 	}
 
-	@Test
+	@Test(enabled=false)
 	public void testScript() {
 		try {
 			Reporter.log("测试方法[ testScript() ]开始");
@@ -183,7 +183,7 @@ public class SeleniumTest {
 	/**
 	 * 点击页面alert弹出框
 	 */
-	@Test
+	@Test(enabled=false)
 	public void testAlert() {
 		try {
 			Reporter.log("测试方法[ testAlert() ]开始");
@@ -201,7 +201,7 @@ public class SeleniumTest {
 		}
 	}
 	
-	@Test
+	@Test(enabled=false)
 	public void testChangeColor() {
 		try {
 			Reporter.log("测试方法[ testChangeColor() ]开始");
