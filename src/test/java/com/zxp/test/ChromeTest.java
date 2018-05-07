@@ -128,7 +128,7 @@ public class ChromeTest {
 	  driver.manage().window().fullscreen();  
   }
   
-  @Test
+  @Test(enabled=false)
 	public void test3() {
 		try {
 			System.out.println("测试方法[ test3() ]开始");
