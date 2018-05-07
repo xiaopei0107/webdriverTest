@@ -9,24 +9,37 @@ import org.openqa.selenium.JavascriptExecutor;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.chrome.ChromeDriver;
-import org.openqa.selenium.interactions.Actions;
+import org.openqa.selenium.ie.InternetExplorerDriver;
 import org.testng.Assert;
 import org.testng.Reporter;
 import org.testng.annotations.AfterClass;
 import org.testng.annotations.BeforeClass;
+import org.testng.annotations.Parameters;
 import org.testng.annotations.Test;
 
 public class SeleniumTest {
 	WebDriver driver;
 
 	@BeforeClass
-	public void beforeClass() {
-		System.setProperty("webdriver.chrome.driver", "D://test//chromedriver.exe");
-		driver = new ChromeDriver();
-		// 最大化窗口
-		driver.manage().window().maximize();
-		// 设置隐性等待时间
-		driver.manage().timeouts().implicitlyWait(8, TimeUnit.SECONDS);
+	@Parameters("Browser") 
+	public void beforeClass(String browser) {
+		if("Chrome".equals(browser)){
+			System.setProperty("webdriver.chrome.driver", "D://test//chromedriver.exe");
+			driver = new ChromeDriver();
+			// 最大化窗口
+			driver.manage().window().maximize();
+			// 设置隐性等待时间
+			driver.manage().timeouts().implicitlyWait(8, TimeUnit.SECONDS);
+		}else if ("IE".equals(browser)){
+			  System.setProperty("webdriver.ie.driver", "D://test//webdriver//IEDriverServer.exe");
+			  driver = new InternetExplorerDriver();
+			//最大化窗口    
+		      driver.manage().window().maximize();    
+		      //设置隐性等待时间    
+		      driver.manage().timeouts().implicitlyWait(8, TimeUnit.SECONDS); 
+		}
+		
+		
 	}
 
 	@Test
@@ -53,7 +66,7 @@ public class SeleniumTest {
 	}
 
 	// 关于xpath这种定位方式，webdriver会将整个页面的所有元素进行扫描以定位我们所需要的元素，所以这是一个非常费时的操作，如果你的脚本中大量使用xpath做元素定位的话，将导致你的脚本执行速度大大降低，所以请慎用
-	@Test(enabled=false)
+	@Test(dependsOnMethods={"test3"}) //依赖方法test3() test3先执行后执行test2()
 	public void test2() {
 		Reporter.log("测试方法[ test2() ]开始");
 		try {
@@ -118,7 +131,7 @@ public class SeleniumTest {
 		}
 	}
 
-	@Test(enabled=false)
+	@Test
 	public void testScript() {
 		try {
 			Reporter.log("测试方法[ testScript() ]开始");
@@ -151,7 +164,7 @@ public class SeleniumTest {
 	 * 如用需要切换到iframe页面 才能点击内部元素   switchTo().frame("rightMain")
 	 * 如要从iframe中回到主页面 就switchTo().defaultContent()就能回到原页面了
 	 */
-	@Test(enabled=false)
+	@Test
 	public void testFrame() {
 		try {
 			Reporter.log("测试方法[ testFrame() ]开始");
@@ -183,7 +196,7 @@ public class SeleniumTest {
 	/**
 	 * 点击页面alert弹出框
 	 */
-	@Test(enabled=false)
+	@Test
 	public void testAlert() {
 		try {
 			Reporter.log("测试方法[ testAlert() ]开始");
@@ -201,7 +214,7 @@ public class SeleniumTest {
 		}
 	}
 	
-	@Test(enabled=false)
+	@Test
 	public void testChangeColor() {
 		try {
 			Reporter.log("测试方法[ testChangeColor() ]开始");

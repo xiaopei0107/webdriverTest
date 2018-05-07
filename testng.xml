@@ -2,6 +2,7 @@
 <!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
 <suite name="TestNgSuite">
 	<test name = "learnSelenium">
+		<parameter name="Browser" value="Chrome"/>
 		<classes>
 			<!-- <class name="com.zxp.test.SeleniumActionTest"/>
 			<class name="com.zxp.test.TakeScreenshotTest"/> -->
@@ -9,10 +10,11 @@
 		</classes>
 		
 	</test>
-	<!-- <test name = "Screenshot">
+	 <test name = "seleniumAction">
+	  <parameter name="Browser" value="IE"/>
 		<classes>
-			<class name="com.zxp.test.TakeScreenshotTest"/>
+			<class name="com.zxp.test.SeleniumActionTest"/>
 		</classes>
 		
-	</test> -->
+	</test> 
 </suite>

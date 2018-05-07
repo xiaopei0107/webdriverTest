@@ -19,7 +19,7 @@ public class LoginTest {
 //			String param="?userLoginNo=xinshiye&userLoginPsd=admin1234";
 
 			driver.get("https://10.60.16.9/index.php/dashboard");
-	        Cookie bdussCookie = new Cookie("DBAPPUSM","5f37a79dfc5b4c1fa1741a8c4086d492a522d3113be56a23bbcc584e637bfead");
+	        Cookie bdussCookie = new Cookie("DBAPPUSM","b64466d093da485591344d07173724dafad07d92ab5f214304db4ab41a6799cb");
 	        driver.manage().addCookie(bdussCookie);
 	        driver.get("https://10.60.16.9/index.php/dashboard");
 	        

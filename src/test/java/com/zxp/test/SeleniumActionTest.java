@@ -5,6 +5,7 @@ import org.testng.annotations.Test;
 import junit.framework.Assert;
 
 import org.testng.annotations.BeforeClass;
+import org.testng.annotations.Parameters;
 
 import java.util.concurrent.TimeUnit;
 
@@ -12,6 +13,7 @@ import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.chrome.ChromeDriver;
+import org.openqa.selenium.ie.InternetExplorerDriver;
 import org.openqa.selenium.interactions.Actions;
 import org.testng.annotations.AfterClass;
 
@@ -26,13 +28,25 @@ public class SeleniumActionTest {
 	WebDriver driver;
 
 	@BeforeClass
-	public void beforeClass() {
-		System.setProperty("webdriver.chrome.driver", "D://test//chromedriver.exe");
-		driver = new ChromeDriver();
-		// 最大化窗口
-		driver.manage().window().maximize();
-		// 设置隐性等待时间
-		driver.manage().timeouts().implicitlyWait(8, TimeUnit.SECONDS);
+	@Parameters("Browser") 
+	public void beforeClass(String browser) {
+		if("Chrome".equals(browser)){
+			System.setProperty("webdriver.chrome.driver", "D://test//chromedriver.exe");
+			driver = new ChromeDriver();
+			// 最大化窗口
+			driver.manage().window().maximize();
+			// 设置隐性等待时间
+			driver.manage().timeouts().implicitlyWait(8, TimeUnit.SECONDS);
+		}else if ("IE".equals(browser)){
+			  System.setProperty("webdriver.ie.driver", "D://test//webdriver//IEDriverServer.exe");
+			  driver = new InternetExplorerDriver();
+			//最大化窗口    
+		      driver.manage().window().maximize();    
+		      //设置隐性等待时间    
+		      driver.manage().timeouts().implicitlyWait(8, TimeUnit.SECONDS); 
+		}
+		
+		
 	}
 	
 	/**
