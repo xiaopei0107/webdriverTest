@@ -1,117 +1,251 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results skipped="0" failed="0" ignored="1" total="7" passed="6">
+<testng-results skipped="5" failed="0" ignored="2" total="7" passed="0">
   <reporter-output>
-    <line>
-      <![CDATA[测试方法[ test1() ]开始]]>
-    </line>
-    <line>
-      <![CDATA[测试方法[ test1() ]结束]]>
-    </line>
-    <line>
-      <![CDATA[测试方法[ test2() ]开始]]>
-    </line>
-    <line>
-      <![CDATA[测试方法[ test2() ]结束]]>
-    </line>
-    <line>
-      <![CDATA[测试方法[ test3() ]开始]]>
-    </line>
-    <line>
-      <![CDATA[测试方法[ test3() ]结束]]>
-    </line>
-    <line>
-      <![CDATA[测试方法[ testAlert() ]开始]]>
-    </line>
-    <line>
-      <![CDATA[测试方法[ testAlert() ]结束]]>
-    </line>
-    <line>
-      <![CDATA[测试方法[ testChangeColor() ]开始]]>
-    </line>
-    <line>
-      <![CDATA[测试方法[ testChangeColor() ]结束]]>
-    </line>
-    <line>
-      <![CDATA[测试方法[ testScript() ]开始]]>
-    </line>
-    <line>
-      <![CDATA[测试方法[ testScript() ]结束]]>
-    </line>
   </reporter-output>
-  <suite name="TestNgSuite" duration-ms="112608" started-at="2018-04-16T07:20:55Z" finished-at="2018-04-16T07:22:47Z">
+  <suite name="Default suite" duration-ms="123" started-at="2018-05-11T06:35:31Z" finished-at="2018-05-11T06:35:31Z">
     <groups>
     </groups>
-    <test name="learnSelenium" duration-ms="112608" started-at="2018-04-16T07:20:55Z" finished-at="2018-04-16T07:22:47Z">
-      <class name="com.zxp.test.SeleniumTest">
-        <test-method status="PASS" signature="beforeClass()[pri:0, instance:com.zxp.test.SeleniumTest@6093dd95]" name="beforeClass" is-config="true" duration-ms="4655" started-at="2018-04-16T15:20:55Z" finished-at="2018-04-16T15:20:59Z">
+    <test name="Default test" duration-ms="123" started-at="2018-05-11T06:35:31Z" finished-at="2018-05-11T06:35:31Z">
+      <class name="com.zxp.test.learn.SeleniumTest">
+        <test-method status="FAIL" signature="beforeClass(java.lang.String)[pri:0, instance:com.zxp.test.learn.SeleniumTest@3bfdc050]" name="beforeClass" is-config="true" duration-ms="0" started-at="2018-05-11T14:35:31Z" finished-at="2018-05-11T14:35:31Z">
+          <exception class="org.testng.TestNGException">
+            <message>
+              <![CDATA[
+Parameter 'Browser' is required by BeforeClass on method beforeClass but has not been marked @Optional or defined
+in C:\Temp\testng-eclipse--1153734170\testng-customsuite.xml]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[org.testng.TestNGException: 
+Parameter 'Browser' is required by BeforeClass on method beforeClass but has not been marked @Optional or defined
+in C:\Temp\testng-eclipse--1153734170\testng-customsuite.xml
+	at org.testng.internal.Parameters.createParameters(Parameters.java:199)
+	at org.testng.internal.Parameters.createParameters(Parameters.java:443)
+	at org.testng.internal.Parameters.createConfigurationParameters(Parameters.java:118)
+	at org.testng.internal.Invoker.invokeConfigurations(Invoker.java:203)
+	at org.testng.internal.Invoker.invokeConfigurations(Invoker.java:144)
+	at org.testng.internal.TestMethodWorker.invokeBeforeClassMethods(TestMethodWorker.java:169)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:108)
+	at org.testng.TestRunner.privateRun(TestRunner.java:756)
+	at org.testng.TestRunner.run(TestRunner.java:610)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:387)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:382)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:340)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:289)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:86)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1293)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1218)
+	at org.testng.TestNG.runSuites(TestNG.java:1133)
+	at org.testng.TestNG.run(TestNG.java:1104)
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:132)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:236)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:81)
+]]>
+            </full-stacktrace>
+          </exception> <!-- org.testng.TestNGException -->
           <reporter-output>
           </reporter-output>
         </test-method> <!-- beforeClass -->
-        <test-method status="PASS" signature="test1()[pri:0, instance:com.zxp.test.SeleniumTest@6093dd95]" name="test1" duration-ms="3014" started-at="2018-04-16T15:20:59Z" finished-at="2018-04-16T15:21:02Z">
+        <test-method status="SKIP" signature="test1()[pri:0, instance:com.zxp.test.learn.SeleniumTest@3bfdc050]" name="test1" duration-ms="11" started-at="2018-05-11T14:35:31Z" finished-at="2018-05-11T14:35:31Z">
+          <exception class="org.testng.TestNGException">
+            <message>
+              <![CDATA[
+Parameter 'Browser' is required by BeforeClass on method beforeClass but has not been marked @Optional or defined
+in C:\Temp\testng-eclipse--1153734170\testng-customsuite.xml]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[org.testng.TestNGException: 
+Parameter 'Browser' is required by BeforeClass on method beforeClass but has not been marked @Optional or defined
+in C:\Temp\testng-eclipse--1153734170\testng-customsuite.xml
+	at org.testng.internal.Parameters.createParameters(Parameters.java:199)
+	at org.testng.internal.Parameters.createParameters(Parameters.java:443)
+	at org.testng.internal.Parameters.createConfigurationParameters(Parameters.java:118)
+	at org.testng.internal.Invoker.invokeConfigurations(Invoker.java:203)
+	at org.testng.internal.Invoker.invokeConfigurations(Invoker.java:144)
+	at org.testng.internal.TestMethodWorker.invokeBeforeClassMethods(TestMethodWorker.java:169)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:108)
+	at org.testng.TestRunner.privateRun(TestRunner.java:756)
+	at org.testng.TestRunner.run(TestRunner.java:610)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:387)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:382)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:340)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:289)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:86)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1293)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1218)
+	at org.testng.TestNG.runSuites(TestNG.java:1133)
+	at org.testng.TestNG.run(TestNG.java:1104)
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:132)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:236)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:81)
+]]>
+            </full-stacktrace>
+          </exception> <!-- org.testng.TestNGException -->
           <reporter-output>
-            <line>
-              <![CDATA[测试方法[ test1() ]开始]]>
-            </line>
-            <line>
-              <![CDATA[测试方法[ test1() ]结束]]>
-            </line>
           </reporter-output>
         </test-method> <!-- test1 -->
-        <test-method status="PASS" signature="test2()[pri:0, instance:com.zxp.test.SeleniumTest@6093dd95]" name="test2" duration-ms="11019" started-at="2018-04-16T15:21:02Z" finished-at="2018-04-16T15:21:13Z">
+        <test-method status="SKIP" signature="test2()[pri:0, instance:com.zxp.test.learn.SeleniumTest@3bfdc050]" name="test2" duration-ms="6" started-at="2018-05-11T14:35:31Z" finished-at="2018-05-11T14:35:31Z">
+          <exception class="org.testng.TestNGException">
+            <message>
+              <![CDATA[
+Parameter 'Browser' is required by BeforeClass on method beforeClass but has not been marked @Optional or defined
+in C:\Temp\testng-eclipse--1153734170\testng-customsuite.xml]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[org.testng.TestNGException: 
+Parameter 'Browser' is required by BeforeClass on method beforeClass but has not been marked @Optional or defined
+in C:\Temp\testng-eclipse--1153734170\testng-customsuite.xml
+	at org.testng.internal.Parameters.createParameters(Parameters.java:199)
+	at org.testng.internal.Parameters.createParameters(Parameters.java:443)
+	at org.testng.internal.Parameters.createConfigurationParameters(Parameters.java:118)
+	at org.testng.internal.Invoker.invokeConfigurations(Invoker.java:203)
+	at org.testng.internal.Invoker.invokeConfigurations(Invoker.java:144)
+	at org.testng.internal.TestMethodWorker.invokeBeforeClassMethods(TestMethodWorker.java:169)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:108)
+	at org.testng.TestRunner.privateRun(TestRunner.java:756)
+	at org.testng.TestRunner.run(TestRunner.java:610)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:387)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:382)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:340)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:289)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:86)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1293)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1218)
+	at org.testng.TestNG.runSuites(TestNG.java:1133)
+	at org.testng.TestNG.run(TestNG.java:1104)
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:132)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:236)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:81)
+]]>
+            </full-stacktrace>
+          </exception> <!-- org.testng.TestNGException -->
           <reporter-output>
-            <line>
-              <![CDATA[测试方法[ test2() ]开始]]>
-            </line>
-            <line>
-              <![CDATA[测试方法[ test2() ]结束]]>
-            </line>
           </reporter-output>
         </test-method> <!-- test2 -->
-        <test-method status="PASS" signature="test3()[pri:0, instance:com.zxp.test.SeleniumTest@6093dd95]" name="test3" duration-ms="21345" started-at="2018-04-16T15:21:13Z" finished-at="2018-04-16T15:21:35Z">
+        <test-method status="SKIP" signature="testChangeColor()[pri:0, instance:com.zxp.test.learn.SeleniumTest@3bfdc050]" name="testChangeColor" duration-ms="11" started-at="2018-05-11T14:35:31Z" finished-at="2018-05-11T14:35:31Z">
+          <exception class="org.testng.TestNGException">
+            <message>
+              <![CDATA[
+Parameter 'Browser' is required by BeforeClass on method beforeClass but has not been marked @Optional or defined
+in C:\Temp\testng-eclipse--1153734170\testng-customsuite.xml]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[org.testng.TestNGException: 
+Parameter 'Browser' is required by BeforeClass on method beforeClass but has not been marked @Optional or defined
+in C:\Temp\testng-eclipse--1153734170\testng-customsuite.xml
+	at org.testng.internal.Parameters.createParameters(Parameters.java:199)
+	at org.testng.internal.Parameters.createParameters(Parameters.java:443)
+	at org.testng.internal.Parameters.createConfigurationParameters(Parameters.java:118)
+	at org.testng.internal.Invoker.invokeConfigurations(Invoker.java:203)
+	at org.testng.internal.Invoker.invokeConfigurations(Invoker.java:144)
+	at org.testng.internal.TestMethodWorker.invokeBeforeClassMethods(TestMethodWorker.java:169)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:108)
+	at org.testng.TestRunner.privateRun(TestRunner.java:756)
+	at org.testng.TestRunner.run(TestRunner.java:610)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:387)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:382)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:340)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:289)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:86)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1293)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1218)
+	at org.testng.TestNG.runSuites(TestNG.java:1133)
+	at org.testng.TestNG.run(TestNG.java:1104)
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:132)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:236)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:81)
+]]>
+            </full-stacktrace>
+          </exception> <!-- org.testng.TestNGException -->
           <reporter-output>
-            <line>
-              <![CDATA[测试方法[ test3() ]开始]]>
-            </line>
-            <line>
-              <![CDATA[测试方法[ test3() ]结束]]>
-            </line>
-          </reporter-output>
-        </test-method> <!-- test3 -->
-        <test-method status="PASS" signature="testAlert()[pri:0, instance:com.zxp.test.SeleniumTest@6093dd95]" name="testAlert" duration-ms="22987" started-at="2018-04-16T15:21:35Z" finished-at="2018-04-16T15:21:58Z">
-          <reporter-output>
-            <line>
-              <![CDATA[测试方法[ testAlert() ]开始]]>
-            </line>
-            <line>
-              <![CDATA[测试方法[ testAlert() ]结束]]>
-            </line>
-          </reporter-output>
-        </test-method> <!-- testAlert -->
-        <test-method status="PASS" signature="testChangeColor()[pri:0, instance:com.zxp.test.SeleniumTest@6093dd95]" name="testChangeColor" duration-ms="22205" started-at="2018-04-16T15:21:58Z" finished-at="2018-04-16T15:22:20Z">
-          <reporter-output>
-            <line>
-              <![CDATA[测试方法[ testChangeColor() ]开始]]>
-            </line>
-            <line>
-              <![CDATA[测试方法[ testChangeColor() ]结束]]>
-            </line>
           </reporter-output>
         </test-method> <!-- testChangeColor -->
-        <test-method status="PASS" signature="testScript()[pri:0, instance:com.zxp.test.SeleniumTest@6093dd95]" name="testScript" duration-ms="26562" started-at="2018-04-16T15:22:20Z" finished-at="2018-04-16T15:22:46Z">
+        <test-method status="SKIP" signature="testFrame()[pri:0, instance:com.zxp.test.learn.SeleniumTest@3bfdc050]" name="testFrame" duration-ms="3" started-at="2018-05-11T14:35:31Z" finished-at="2018-05-11T14:35:31Z">
+          <exception class="org.testng.TestNGException">
+            <message>
+              <![CDATA[
+Parameter 'Browser' is required by BeforeClass on method beforeClass but has not been marked @Optional or defined
+in C:\Temp\testng-eclipse--1153734170\testng-customsuite.xml]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[org.testng.TestNGException: 
+Parameter 'Browser' is required by BeforeClass on method beforeClass but has not been marked @Optional or defined
+in C:\Temp\testng-eclipse--1153734170\testng-customsuite.xml
+	at org.testng.internal.Parameters.createParameters(Parameters.java:199)
+	at org.testng.internal.Parameters.createParameters(Parameters.java:443)
+	at org.testng.internal.Parameters.createConfigurationParameters(Parameters.java:118)
+	at org.testng.internal.Invoker.invokeConfigurations(Invoker.java:203)
+	at org.testng.internal.Invoker.invokeConfigurations(Invoker.java:144)
+	at org.testng.internal.TestMethodWorker.invokeBeforeClassMethods(TestMethodWorker.java:169)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:108)
+	at org.testng.TestRunner.privateRun(TestRunner.java:756)
+	at org.testng.TestRunner.run(TestRunner.java:610)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:387)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:382)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:340)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:289)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:86)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1293)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1218)
+	at org.testng.TestNG.runSuites(TestNG.java:1133)
+	at org.testng.TestNG.run(TestNG.java:1104)
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:132)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:236)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:81)
+]]>
+            </full-stacktrace>
+          </exception> <!-- org.testng.TestNGException -->
           <reporter-output>
-            <line>
-              <![CDATA[测试方法[ testScript() ]开始]]>
-            </line>
-            <line>
-              <![CDATA[测试方法[ testScript() ]结束]]>
-            </line>
+          </reporter-output>
+        </test-method> <!-- testFrame -->
+        <test-method status="SKIP" signature="testScript()[pri:0, instance:com.zxp.test.learn.SeleniumTest@3bfdc050]" name="testScript" duration-ms="1" started-at="2018-05-11T14:35:31Z" finished-at="2018-05-11T14:35:31Z">
+          <exception class="org.testng.TestNGException">
+            <message>
+              <![CDATA[
+Parameter 'Browser' is required by BeforeClass on method beforeClass but has not been marked @Optional or defined
+in C:\Temp\testng-eclipse--1153734170\testng-customsuite.xml]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[org.testng.TestNGException: 
+Parameter 'Browser' is required by BeforeClass on method beforeClass but has not been marked @Optional or defined
+in C:\Temp\testng-eclipse--1153734170\testng-customsuite.xml
+	at org.testng.internal.Parameters.createParameters(Parameters.java:199)
+	at org.testng.internal.Parameters.createParameters(Parameters.java:443)
+	at org.testng.internal.Parameters.createConfigurationParameters(Parameters.java:118)
+	at org.testng.internal.Invoker.invokeConfigurations(Invoker.java:203)
+	at org.testng.internal.Invoker.invokeConfigurations(Invoker.java:144)
+	at org.testng.internal.TestMethodWorker.invokeBeforeClassMethods(TestMethodWorker.java:169)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:108)
+	at org.testng.TestRunner.privateRun(TestRunner.java:756)
+	at org.testng.TestRunner.run(TestRunner.java:610)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:387)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:382)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:340)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:289)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:86)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1293)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1218)
+	at org.testng.TestNG.runSuites(TestNG.java:1133)
+	at org.testng.TestNG.run(TestNG.java:1104)
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:132)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:236)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:81)
+]]>
+            </full-stacktrace>
+          </exception> <!-- org.testng.TestNGException -->
+          <reporter-output>
           </reporter-output>
         </test-method> <!-- testScript -->
-        <test-method status="PASS" signature="afterClass()[pri:0, instance:com.zxp.test.SeleniumTest@6093dd95]" name="afterClass" is-config="true" duration-ms="786" started-at="2018-04-16T15:22:46Z" finished-at="2018-04-16T15:22:47Z">
+        <test-method status="SKIP" signature="afterClass()[pri:0, instance:com.zxp.test.learn.SeleniumTest@3bfdc050]" name="afterClass" is-config="true" duration-ms="0" started-at="2018-05-11T14:35:31Z" finished-at="2018-05-11T14:35:31Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- afterClass -->
-      </class> <!-- com.zxp.test.SeleniumTest -->
-    </test> <!-- learnSelenium -->
-  </suite> <!-- TestNgSuite -->
+      </class> <!-- com.zxp.test.learn.SeleniumTest -->
+    </test> <!-- Default test -->
+  </suite> <!-- Default suite -->
 </testng-results>

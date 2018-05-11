@@ -1,4 +1,4 @@
-package com.zxp.test;
+package com.zxp.test.upload;
 
 import java.awt.Rectangle;
 import java.awt.Robot;

@@ -1,6 +1,8 @@
-package com.zxp.test;
+package com.zxp.test.learn;
 
 import org.testng.annotations.Test;
+
+import com.zxp.test.util.WebDriverUtil;
 
 import junit.framework.Assert;
 
@@ -28,22 +30,12 @@ public class SeleniumActionTest {
 	WebDriver driver;
 
 	@BeforeClass
-	@Parameters("Browser") 
+	@Parameters("Browser") //全局参数
 	public void beforeClass(String browser) {
 		if("Chrome".equals(browser)){
-			System.setProperty("webdriver.chrome.driver", "D://test//chromedriver.exe");
-			driver = new ChromeDriver();
-			// 最大化窗口
-			driver.manage().window().maximize();
-			// 设置隐性等待时间
-			driver.manage().timeouts().implicitlyWait(8, TimeUnit.SECONDS);
+			driver = WebDriverUtil.getChromeWebDriver();
 		}else if ("IE".equals(browser)){
-			  System.setProperty("webdriver.ie.driver", "D://test//webdriver//IEDriverServer.exe");
-			  driver = new InternetExplorerDriver();
-			//最大化窗口    
-		      driver.manage().window().maximize();    
-		      //设置隐性等待时间    
-		      driver.manage().timeouts().implicitlyWait(8, TimeUnit.SECONDS); 
+			driver = WebDriverUtil.getIEWebDriver();
 		}
 		
 		

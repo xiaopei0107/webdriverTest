@@ -1,4 +1,4 @@
-package com.zxp.test;
+package example;
 
 import java.util.concurrent.TimeUnit;
 

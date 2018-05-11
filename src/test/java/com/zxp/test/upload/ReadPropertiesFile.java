@@ -1,4 +1,4 @@
-package com.zxp.test;
+package com.zxp.test.upload;
 
 import java.io.FileInputStream;
 import java.io.FileNotFoundException;

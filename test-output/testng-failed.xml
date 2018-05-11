@@ -1,19 +1,17 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
-<suite guice-stage="DEVELOPMENT" name="Failed suite [TestNgSuite]">
-  <test name="learnSelenium(failed)">
+<suite guice-stage="DEVELOPMENT" name="Failed suite [Default suite]">
+  <test name="Default test(failed)">
     <classes>
-      <class name="com.zxp.test.SeleniumTest">
+      <class name="com.zxp.test.learn.SeleniumTest">
         <methods>
-          <include name="test3"/>
-          <include name="testAlert"/>
+          <include name="test1"/>
+          <include name="testFrame"/>
+          <include name="test2"/>
           <include name="testChangeColor"/>
           <include name="testScript"/>
-          <include name="beforeClass"/>
-          <include name="test2"/>
-          <include name="test1"/>
         </methods>
-      </class> <!-- com.zxp.test.SeleniumTest -->
+      </class> <!-- com.zxp.test.learn.SeleniumTest -->
     </classes>
-  </test> <!-- learnSelenium(failed) -->
-</suite> <!-- Failed suite [TestNgSuite] -->
+  </test> <!-- Default test(failed) -->
+</suite> <!-- Failed suite [Default suite] -->

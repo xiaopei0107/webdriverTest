@@ -3,13 +3,15 @@
 <suite guice-stage="DEVELOPMENT" name="Failed suite [Default suite]">
   <test name="Default test(failed)">
     <classes>
-      <class name="com.zxp.test.TakeScreenshotTest">
+      <class name="com.zxp.test.learn.SeleniumTest">
         <methods>
-          <include name="testDatePicker"/>
-          <include name="afterClass"/>
-          <include name="beforeClass"/>
+          <include name="test1"/>
+          <include name="testFrame"/>
+          <include name="test2"/>
+          <include name="testChangeColor"/>
+          <include name="testScript"/>
         </methods>
-      </class> <!-- com.zxp.test.TakeScreenshotTest -->
+      </class> <!-- com.zxp.test.learn.SeleniumTest -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->

@@ -1,6 +1,5 @@
-package com.zxp.test;
+package com.zxp.test.learn;
 
-import org.openqa.selenium.Cookie;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
 import org.testng.annotations.AfterClass;
@@ -18,11 +17,11 @@ public class LoginTest {
 //			String url="http://uat.bsteel.com/newexchange/login/doDefault.do";
 //			String param="?userLoginNo=xinshiye&userLoginPsd=admin1234";
 
-			driver.get("https://10.60.16.9/index.php/dashboard");
-	        Cookie bdussCookie = new Cookie("DBAPPUSM","b64466d093da485591344d07173724dafad07d92ab5f214304db4ab41a6799cb");
-	        driver.manage().addCookie(bdussCookie);
-	        driver.get("https://10.60.16.9/index.php/dashboard");
-	        
+//			driver.get("https://10.60.16.9/index.php/dashboard");
+//	        Cookie bdussCookie = new Cookie("DBAPPUSM","b64466d093da485591344d07173724dafad07d92ab5f214304db4ab41a6799cb");
+//	        driver.manage().addCookie(bdussCookie);
+//	        driver.get("https://10.60.16.9/index.php/dashboard");
+			driver.get("https://www.baidu.com");
 		
 		} catch (Exception e) {
 			e.printStackTrace();
@@ -32,7 +31,8 @@ public class LoginTest {
 
 	@BeforeClass
 	public void beforeClass() {
-		System.setProperty("webdriver.chrome.driver", "D://test//chromedriver.exe");
+		String path = this.getClass().getResource("/chromedriver.exe").getPath();
+		System.setProperty("webdriver.chrome.driver", path);
 		driver = new ChromeDriver();
 		driver.manage().window().maximize();
 	}
