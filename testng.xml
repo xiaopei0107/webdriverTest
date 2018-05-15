@@ -9,7 +9,7 @@
 		
 	</test>
 	 <test name = "seleniumAction">
-	  <parameter name="Browser" value="IE"/>
+	  <parameter name="Browser" value="Chrome"/><!-- IE -->
 		<classes>
 			<class name="com.zxp.test.learn.SeleniumActionTest"/>
 		</classes>

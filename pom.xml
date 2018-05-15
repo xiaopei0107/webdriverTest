@@ -80,9 +80,6 @@
 
 		</plugins>
 		
-			
-	</build>
-	<!-- 	
 		<resources>
 			<resource>
 				<filtering>false</filtering>
@@ -97,8 +94,8 @@
 			</resource>
 		</resources>
 		
-
-	
+	</build>
+		
 	<profiles>
 		 <profile>
             <id>local</id>
@@ -108,17 +105,16 @@
                 <webdriver.ie.driver>IEDriverServer.exe</webdriver.ie.driver>
             </properties>
             <activation>
-                默认生效的配置组
                 <activeByDefault>true</activeByDefault>
             </activation>
         </profile>
         <profile>
             <id>pro</id>
             <properties>
-                 <webdriver.path>1234</webdriver.path>
-                 <webdriver.chrome.driver.path></webdriver.chrome.driver.path>
-                 <webdriver.ie.driver></webdriver.ie.driver>
+                 <webdriver.path>/root/webdriver/</webdriver.path>
+                 <webdriver.chrome.driver.path>chromedriver</webdriver.chrome.driver.path>
+                 <webdriver.ie.driver>IEDriverServer.exe</webdriver.ie.driver>
             </properties>
         </profile>
-	</profiles> -->
+	</profiles> 
 </project>
