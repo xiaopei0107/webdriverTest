@@ -186,7 +186,7 @@ public class SeleniumTest {
 	/**
 	 * 点击页面alert弹出框
 	 */
-	@Test(enabled=false)
+	@Test
 	public void testAlert() {
 		try {
 			Reporter.log("测试方法[ testAlert() ]开始");

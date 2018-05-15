@@ -100,9 +100,8 @@
 		 <profile>
             <id>local</id>
             <properties>
-                <webdriver.path>D://test//webdriver//</webdriver.path>
-                <webdriver.chrome.driver>chromedriver.exe</webdriver.chrome.driver>
-                <webdriver.ie.driver>IEDriverServer.exe</webdriver.ie.driver>
+                <webdriver.path>D://test//webdriver//chromedriver.exe</webdriver.path>
+                <upload.path>D://</upload.path>
             </properties>
             <activation>
                 <activeByDefault>true</activeByDefault>
@@ -111,9 +110,8 @@
         <profile>
             <id>pro</id>
             <properties>
-                 <webdriver.path>/root/webdriver/</webdriver.path>
-                 <webdriver.chrome.driver.path>chromedriver</webdriver.chrome.driver.path>
-                 <webdriver.ie.driver>IEDriverServer.exe</webdriver.ie.driver>
+                 <webdriver.path>/root/webdriver/chromedriver</webdriver.path>
+                 <upload.path>/root/upload/</upload.path>
             </properties>
         </profile>
 	</profiles> 

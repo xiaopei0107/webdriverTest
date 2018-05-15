@@ -6,12 +6,14 @@
 		<classes>
 			<class name="com.zxp.test.learn.SeleniumTest"/>
 		</classes>
-		
-	</test>
-	 <test name = "seleniumAction">
-	  <parameter name="Browser" value="Chrome"/><!-- IE -->
 		<classes>
 			<class name="com.zxp.test.learn.SeleniumActionTest"/>
+		</classes>
+	</test>
+	 <test name = "uploadAction">
+	  <parameter name="Browser" value="Chrome"/><!-- IE -->
+		<classes>
+			<class name="com.zxp.test.upload.TakeScreenshotTest"/>
 		</classes>
 		
 	</test> 

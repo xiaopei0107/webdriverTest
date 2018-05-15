@@ -7,6 +7,9 @@ import java.awt.datatransfer.StringSelection;
 import java.awt.event.KeyEvent;
 import java.awt.image.BufferedImage;
 import java.io.File;
+import java.text.SimpleDateFormat;
+import java.util.Date;
+import java.util.ResourceBundle;
 import java.util.concurrent.TimeUnit;
 
 import javax.imageio.ImageIO;
@@ -28,6 +31,8 @@ import org.testng.annotations.AfterClass;
 import org.testng.annotations.BeforeClass;
 import org.testng.annotations.Test;
 
+import com.zxp.test.util.WebDriverUtil;
+
 import junit.framework.Assert;
 
 /**
@@ -37,16 +42,13 @@ import junit.framework.Assert;
  *
  */
 public class TakeScreenshotTest {
+	
+	private static String uploadPath = ResourceBundle.getBundle("base").getString("upload.path");
 	WebDriver driver;
 
 	@BeforeClass
 	public void beforeClass() {
-		System.setProperty("webdriver.chrome.driver", "D://test//chromedriver.exe");
-		driver = new ChromeDriver();
-		// 最大化窗口
-		driver.manage().window().maximize();
-		// 设置隐性等待时间
-		driver.manage().timeouts().implicitlyWait(8, TimeUnit.SECONDS);
+		driver = WebDriverUtil.getChromeWebDriver();
 	}
 
 	/**
@@ -109,7 +111,7 @@ public class TakeScreenshotTest {
 	 * 报org.openqa.selenium.StaleElementReferenceException: stale element
 	 * reference: element is not attached to the page document 重新加载元素就可以了
 	 */
-	@Test
+	@Test(enabled=false)
 	public void testDatePicker() {
 		try {
 			driver.get("http://www.bsteel.com.cn/newexchange/xhwzJoinBuy/doDefault.do?type=2");
@@ -147,8 +149,11 @@ public class TakeScreenshotTest {
 			driver.get("https://www.baidu.com");
 			Thread.sleep(1000);
 
+			// 文件夹生成规则 yyyyMM/ddHHmmssSSS
+			SimpleDateFormat fmt_fn = new SimpleDateFormat("yyyyMMddHHmmssSSS");
+			String picName = uploadPath+fmt_fn.format(new Date())+".jpg";
 			// 指定图片的路径
-			StringSelection select = new StringSelection("D:\\12.jpg");
+			StringSelection select = new StringSelection(picName);
 
 			// 把图片文件路径复制到剪贴板
 			Toolkit.getDefaultToolkit().getSystemClipboard().setContents(select, null);

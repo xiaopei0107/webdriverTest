@@ -1,5 +1,6 @@
 package com.zxp.test.util;
 
+import java.util.ResourceBundle;
 import java.util.concurrent.TimeUnit;
 
 import org.openqa.selenium.WebDriver;
@@ -9,10 +10,11 @@ import org.openqa.selenium.ie.InternetExplorerDriver;
 public class WebDriverUtil {
 
 	private static WebDriver driver;
+	private static String webDriverPath = ResourceBundle.getBundle("base").getString("webdriver.path");
 
 	public static WebDriver getChromeWebDriver() {
-		String path = WebDriverUtil.class.getResource("/chromedriver.exe").getPath();
-		System.setProperty("webdriver.chrome.driver", path);
+		//String path = WebDriverUtil.class.getResource("/chromedriver.exe").getPath();
+		System.setProperty("webdriver.chrome.driver", webDriverPath);
 		driver = new ChromeDriver();
 		driver.manage().timeouts().implicitlyWait(8, TimeUnit.SECONDS);
 		driver.manage().window().maximize();

@@ -16,6 +16,8 @@ import org.testng.annotations.AfterClass;
 import org.testng.annotations.BeforeClass;
 import org.testng.annotations.Test;
 
+import com.zxp.test.util.WebDriverUtil;
+
 public class ReadPropertiesFile {
 
 	WebDriver driver; 
@@ -56,10 +58,7 @@ public class ReadPropertiesFile {
 	
 	 @BeforeClass
 	  public void beforeClass() {
-		  System.setProperty("webdriver.chrome.driver", "D://test//chromedriver.exe");  
-		  driver = new ChromeDriver();		  
-		  //浏览器全屏
-		  driver.manage().window().maximize();  
+		 driver = WebDriverUtil.getChromeWebDriver(); 
 	  }
 	  
 	
