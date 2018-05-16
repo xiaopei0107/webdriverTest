@@ -5,10 +5,9 @@
 		<parameter name="Browser" value="Chrome"/>
 		<classes>
 			<class name="com.zxp.test.learn.SeleniumTest"/>
-		</classes>
-		<classes>
 			<class name="com.zxp.test.learn.SeleniumActionTest"/>
 		</classes>
+		
 	</test>
 	 <test name = "uploadAction">
 	  <parameter name="Browser" value="Chrome"/><!-- IE -->
