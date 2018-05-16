@@ -6,6 +6,7 @@ import java.util.concurrent.TimeUnit;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
 import org.openqa.selenium.ie.InternetExplorerDriver;
+import org.testng.Reporter;
 
 public class WebDriverUtil {
 
@@ -18,6 +19,7 @@ public class WebDriverUtil {
 		driver = new ChromeDriver();
 		driver.manage().timeouts().implicitlyWait(8, TimeUnit.SECONDS);
 		driver.manage().window().maximize();
+		Reporter.log("初始化webdriver成功");
 		return driver;
 	}
 
