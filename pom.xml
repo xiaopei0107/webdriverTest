@@ -103,12 +103,12 @@
                 <webdriver.path>D://test//webdriver//chromedriver.exe</webdriver.path>
                 <upload.path>D://</upload.path>
             </properties>
-            <activation>
-                <activeByDefault>true</activeByDefault>
-            </activation>
         </profile>
         <profile>
             <id>pro</id>
+             <activation>
+                <activeByDefault>true</activeByDefault>
+            </activation>
             <properties>
                  <webdriver.path>/root/webdriver/chromedriver</webdriver.path>
                  <upload.path>/root/upload/</upload.path>
