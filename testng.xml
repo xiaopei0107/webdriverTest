@@ -4,16 +4,17 @@
 	<test name = "learnSelenium">
 		<parameter name="Browser" value="Chrome"/>
 		<classes>
-			<class name="com.zxp.test.learn.SeleniumTest"/>
-			<class name="com.zxp.test.learn.SeleniumActionTest"/>
+			<!-- <class name="com.zxp.test.learn.SeleniumTest"/>
+			<class name="com.zxp.test.learn.SeleniumActionTest"/> -->
+			<class name="com.zxp.test.test.PassTest"></class>
 		</classes>
 		
 	</test>
-	 <test name = "uploadAction">
-	  <parameter name="Browser" value="Chrome"/><!-- IE -->
+	 <!-- <test name = "uploadAction">
+	  <parameter name="Browser" value="Chrome"/>IE
 		<classes>
 			<class name="com.zxp.test.upload.TakeScreenshotTest"/>
 		</classes>
 		
-	</test> 
+	</test>  -->
 </suite>
