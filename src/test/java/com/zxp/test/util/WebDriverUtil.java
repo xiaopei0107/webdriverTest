@@ -12,16 +12,21 @@ import org.testng.Reporter;
 public class WebDriverUtil {
 
 	private static WebDriver driver;
-	private static String webDriverPath = ResourceBundle.getBundle("base").getString("webdriver.path");
+	//private static String webDriverPath = ResourceBundle.getBundle("base").getString("webdriver.path");
 
 	public static WebDriver getChromeWebDriver() {
+		String sysName = System.getProperty("os.name");
+		String webDriverPath = "D://test//webdriver//chromedriver.exe";
+		if(!sysName.startsWith("Win")){
+			webDriverPath = "/root/webdriver/chromedriver";
+		}
+		
 		Reporter.log("初始化webdriver webDriverPath：" + webDriverPath);
-		// String path =
-		// WebDriverUtil.class.getResource("/chromedriver.exe").getPath();
 		System.setProperty("webdriver.chrome.driver", webDriverPath);
 
 		ChromeOptions options = new ChromeOptions();
-		options.addArguments("window-size=1280,728"); // 设置窗口大小
+		options.addArguments("--headless"); //
+		//options.addArguments("window-size=1280,728"); // 设置窗口大小
 		driver = new ChromeDriver(options);
 		driver.manage().window().maximize();
 		Reporter.log("初始化webdriver成功");
