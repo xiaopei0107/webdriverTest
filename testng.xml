@@ -1,12 +1,18 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
-<suite name="TestNgSuite">
+
+<!-- 
+ parallel="tests"  表示使用不同的线程运行本文件中test标签定义的测试类
+ thread-count="5" 表示同时开启运行测试脚本的线程数
+<suite name="TestNgSuite" parallel="tests" thread-count="5"> -->
+<suite name="TestNgSuite" parallel="tests" thread-count="5">
 	<test name = "learnSelenium">
 		<parameter name="Browser" value="Chrome"/>
 		<classes>
 			<!-- <class name="com.zxp.test.learn.SeleniumTest"/>
-			<class name="com.zxp.test.learn.SeleniumActionTest"/> -->
-			<class name="com.zxp.test.test.PassTest"></class>
+			<class name="com.zxp.test.learn.SeleniumActionTest"/> 
+			<class name="com.zxp.test.test.PassTest"></class>-->
+				<class name="com.zxp.test.learn.LearnTest1"/> 
 		</classes>
 		
 	</test>
