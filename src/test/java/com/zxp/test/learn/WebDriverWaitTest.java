@@ -13,6 +13,7 @@ import org.testng.annotations.AfterMethod;
 import org.testng.annotations.BeforeMethod;
 import org.testng.annotations.Test;
 
+import com.zxp.test.page.LoginPage;
 import com.zxp.test.util.WebDriverUtil;
 
 public class WebDriverWaitTest {
@@ -47,25 +48,16 @@ public class WebDriverWaitTest {
 		Reporter.log("【start测试发送邮件】");
 		int success = 0;
 		try {
-			//访问搜狐登录页面 显式等待页面元素出来
 			WebDriverWait wait = new WebDriverWait(driver, 10);
-			wait.until(ExpectedConditions.presenceOfElementLocated(By.xpath("//*[@id='theme']/form/h2")));
-			Assert.assertTrue(driver.getPageSource().contains("登录搜狐邮箱"));
-			Reporter.log("1.显示登录搜狐邮箱");
 			
-			//填入用户名和密码后登录
-			WebElement loginName = driver.findElement(By.xpath("//*[@id='theme']/form/div[1]/div[1]/input"));
-			loginName.sendKeys("xiaopei_0107@sohu.com");
-			
-			WebElement pwd = driver.findElement(By.xpath("//*[@id='theme']/form/div[2]/div[1]/input"));
-			pwd.sendKeys("peipei0107");
-			
-			WebElement btnLogin = driver.findElement(By.xpath("//*[@id='theme']/form/div[5]/input"));
-			btnLogin.click();
-			Thread.sleep(2000); //必要的等待
+			Reporter.log("1.调用登录方法");
+			//调登录方法
+			LoginPage loginPage = new LoginPage(driver);
+			loginPage.login();
+			Thread.sleep(2000);
 			
 			//验证是否登录成功
-			Assert.assertTrue(driver.getPageSource().contains("Hi，xiaopei_0107"));
+			Assert.assertTrue(driver.getPageSource().contains("写邮件"));
 			Reporter.log("2.登录成功进入主页面");
 			
 			//积分商城

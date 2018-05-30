@@ -12,8 +12,6 @@ import org.testng.Reporter;
 public class WebDriverUtil {
 
 	private static WebDriver driver;
-	// private static String webDriverPath =
-	// ResourceBundle.getBundle("base").getString("webdriver.path");
 
 	public static WebDriver getChromeWebDriver() {
 		String sysName = System.getProperty("os.name");
