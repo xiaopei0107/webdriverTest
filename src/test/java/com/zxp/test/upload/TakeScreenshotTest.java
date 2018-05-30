@@ -90,7 +90,7 @@ public class TakeScreenshotTest {
 		}
 	}
 
-	@Test
+	@Test(enabled=false)
 	/**
 	 * webdriver处理不信任证书的情况
 	 */

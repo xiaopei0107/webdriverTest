@@ -13,6 +13,7 @@
 			<class name="com.zxp.test.learn.SeleniumActionTest"/> 
 			<class name="com.zxp.test.test.PassTest"></class>-->
 				<class name="com.zxp.test.learn.LearnTest1"/> 
+				<class name="com.zxp.test.learn.WebDriverWaitTest"/> 
 		</classes>
 		
 	</test>

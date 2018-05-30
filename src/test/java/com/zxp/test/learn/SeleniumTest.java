@@ -53,7 +53,7 @@ public class SeleniumTest {
 	}
 
 	// 关于xpath这种定位方式，webdriver会将整个页面的所有元素进行扫描以定位我们所需要的元素，所以这是一个非常费时的操作，如果你的脚本中大量使用xpath做元素定位的话，将导致你的脚本执行速度大大降低，所以请慎用
-	@Test
+	@Test(enabled=false)
 	public void test2() {
 		Reporter.log("测试方法[ test2() ]开始");
 		try {
@@ -75,8 +75,9 @@ public class SeleniumTest {
 
 	/**
 	 * 一般来说，自动化也是尽量在一个页面做完相关测试，才会切换到其他页面
+	 * dependsOnMethods={"test2"},
 	 */
-	@Test(dependsOnMethods={"test2"},enabled=false) //依赖方法test2() test2先执行后执行test3()
+	@Test(enabled=false) //依赖方法test2() test2先执行后执行test3()
 	public void test3() {
 		try {
 			Reporter.log("测试方法[ test3() ]开始");

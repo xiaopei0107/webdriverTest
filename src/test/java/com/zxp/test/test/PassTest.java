@@ -1,16 +1,15 @@
 package com.zxp.test.test;
 
-import org.testng.annotations.Test;
-
-import com.zxp.test.util.WebDriverUtil;
-
-import org.testng.annotations.BeforeClass;
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.testng.Assert;
 import org.testng.Reporter;
 import org.testng.annotations.AfterClass;
+import org.testng.annotations.BeforeClass;
+import org.testng.annotations.Test;
+
+import com.zxp.test.util.WebDriverUtil;
 
 public class PassTest {
   @Test
@@ -27,6 +26,7 @@ public class PassTest {
 	  
 	  WebElement kw = driver.findElement(By.id("kw"));
 	  Assert.assertEquals(kw.isDisplayed(), true);
+	  
 	  
 	  Reporter.log("验证通过");
 	  driver.quit();
