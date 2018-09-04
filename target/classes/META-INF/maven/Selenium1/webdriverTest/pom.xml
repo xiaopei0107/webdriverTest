@@ -42,7 +42,6 @@
 			<artifactId>testng</artifactId>
 			<version>6.11</version>
 		</dependency>
-
 	</dependencies>
 
 	<build>
@@ -73,6 +72,13 @@
 					<suiteXmlFiles>
 						<suiteXmlFile>testng.xml</suiteXmlFile>
 					</suiteXmlFiles>
+					<properties>
+						<property>
+							<name>useDefaultListeners</name>
+							<value>false</value>
+						</property>
+					</properties>
+					<!-- <argLine>-Dfile.encoding=UTF-8</argLine> -->
 				</configuration>
 				<version>2.4</version>
 			</plugin>
@@ -102,6 +108,9 @@
             <properties>
                 <webdriver.path>D://test//webdriver//chromedriver.exe</webdriver.path>
                 <upload.path>D://</upload.path>
+                <sohu.mail.url>https://mail.sohu.com/fe/#/login</sohu.mail.url>
+                 <sohu.mail.name>xiaopei_0107@sohu.com</sohu.mail.name>
+                 <sohu.mail.pwd>peipei0107</sohu.mail.pwd>
             </properties>
             <activation>
                 <activeByDefault>true</activeByDefault>
@@ -112,7 +121,13 @@
             <properties>
                  <webdriver.path>/root/webdriver/chromedriver</webdriver.path>
                  <upload.path>/root/upload/</upload.path>
+                 <sohu.mail.url>https://mail.sohu.com/fe/#/login</sohu.mail.url>
+                 <sohu.mail.name>xiaopei_0107@sohu.com</sohu.mail.name>
+                 <sohu.mail.pwd>peipei0107</sohu.mail.pwd>
             </properties>
+             <activation>
+                <activeByDefault>false</activeByDefault>
+            </activation>
         </profile>
 	</profiles> 
 </project>

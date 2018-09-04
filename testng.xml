@@ -1,12 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
 
 <!-- 
  parallel="tests"  表示使用不同的线程运行本文件中test标签定义的测试类
- thread-count="5" 表示同时开启运行测试脚本的线程数
-<suite name="TestNgSuite" parallel="tests" thread-count="5"> -->
+ thread-count="5" 表示同时开启运行测试脚本的线程数 -->
 <suite name="TestNgSuite" parallel="tests" thread-count="5">
-	<test name = "learnSelenium">
+
+	<test name="test" >
 		<parameter name="Browser" value="Chrome"/>
 		<classes>
 			<!-- <class name="com.zxp.test.learn.SeleniumTest"/>
@@ -16,6 +15,10 @@
 				<class name="com.zxp.test.learn.WebDriverWaitTest"/> 
 		</classes>
 		
+		 <listeners>
+            <listener class-name="org.uncommons.reportng.HTMLReporter" />
+            <listener class-name="org.uncommons.reportng.JUnitXMLReporter" />
+        </listeners>
 	</test>
 	 <!-- <test name = "uploadAction">
 	  <parameter name="Browser" value="Chrome"/>IE
