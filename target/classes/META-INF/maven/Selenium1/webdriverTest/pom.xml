@@ -42,6 +42,19 @@
 			<artifactId>testng</artifactId>
 			<version>6.11</version>
 		</dependency>
+		
+		<dependency>
+			<groupId>com.google.inject</groupId>
+			<artifactId>guice</artifactId>
+			<version>4.2.0</version>
+		</dependency>
+		
+		<dependency>
+		    <groupId>org.uncommons</groupId>
+		    <artifactId>reportng</artifactId>
+		    <version>1.1.4</version>
+		</dependency>
+		
 	</dependencies>
 
 	<build>
@@ -72,12 +85,6 @@
 					<suiteXmlFiles>
 						<suiteXmlFile>testng.xml</suiteXmlFile>
 					</suiteXmlFiles>
-					<properties>
-						<property>
-							<name>useDefaultListeners</name>
-							<value>false</value>
-						</property>
-					</properties>
 					<!-- <argLine>-Dfile.encoding=UTF-8</argLine> -->
 				</configuration>
 				<version>2.4</version>

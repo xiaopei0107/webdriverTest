@@ -1,1 +1,16 @@
-com\zxp\test\SeleniumTest.class
+example\ChromeTest.class
+com\zxp\test\exchange\AuctionTest.class
+example\IETest.class
+com\zxp\test\learn\LoginPageTest.class
+com\zxp\test\upload\TakeScreenshotTest.class
+com\zxp\test\learn\LearnTest1$2.class
+com\zxp\test\page\LoginPage.class
+com\zxp\test\learn\WebDriverWaitTest.class
+com\zxp\test\util\WebDriverUtil.class
+com\zxp\test\upload\ReadPropertiesFile.class
+com\zxp\test\learn\LearnTest1.class
+com\zxp\test\test\PassTest.class
+com\zxp\test\util\ContantsUtil.class
+com\zxp\test\learn\LearnTest1$1.class
+com\zxp\test\learn\SeleniumActionTest.class
+com\zxp\test\learn\SeleniumTest.class
