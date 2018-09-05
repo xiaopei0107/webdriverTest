@@ -1,18 +1,41 @@
 <?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+
 <!-- 
  parallel="tests"  表示使用不同的线程运行本文件中test标签定义的测试类
- thread-count="5" 表示同时开启运行测试脚本的线程数 -->
-<suite name="自动化测试" parallel="true">
-
-    <test name="test" preserver-order="true">
-        <classes>
-            <class name="com.zxp.test.learn.LearnTest1"/> 
+ thread-count="5" 表示同时开启运行测试脚本的线程数
+<suite name="TestNgSuite" parallel="tests" thread-count="5"> -->
+<suite name="TestNgSuite" parallel="tests" >
+	<parameter name="Browser" value="Chrome"/>
+	<test name = "Selenium学习">		
+		<classes>
+			 <class name="com.zxp.test.learn.SeleniumTest" />
+			<class name="com.zxp.test.learn.SeleniumActionTest"/> 
+		</classes>
+		
+	</test>
+	<test name = "测试例子">		
+		<classes>
+			<class name="com.zxp.test.test.PassTest"/>
+			<class name="com.zxp.test.learn.LearnTest1"/> 
+		</classes>
+		
+	</test>
+	
+	<!-- <test name = "测试发送邮件">		
+		<classes>
 			<class name="com.zxp.test.learn.WebDriverWaitTest"/> 
-        </classes>
-
-        <listeners>
+		</classes>
+		
+	</test> -->
+	
+	<test name = "uploadAction">
+		<classes>
+			<class name="com.zxp.test.upload.TakeScreenshotTest"/>
+		</classes>		
+	</test>
+	 <listeners>
             <listener class-name="org.uncommons.reportng.HTMLReporter" />
             <listener class-name="org.uncommons.reportng.JUnitXMLReporter" />
         </listeners> 
-    </test>
 </suite>

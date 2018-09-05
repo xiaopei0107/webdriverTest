@@ -29,7 +29,7 @@ public class SeleniumTest {
 		}
 	}
 
-	@Test
+	@Test(enabled=false)
 	public void test1() {
 		Reporter.log("测试方法[ test1() ]开始");
 		driver.get("https://www.baidu.com");

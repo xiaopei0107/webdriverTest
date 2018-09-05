@@ -43,7 +43,7 @@ public class WebDriverWaitTest {
 	 *   1.出现元素不可见  没找到时  最好在此之前加一个sleep time
 	 *   2.实在没折用js来进行操作元素 
 	 */
-	@Test(enabled=false)
+	@Test
 	public void testSohuSendMail()  {
 		Reporter.log("【start测试发送邮件】");
 		int success = 0;

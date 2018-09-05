@@ -7,11 +7,13 @@ import org.testng.Assert;
 import org.testng.Reporter;
 import org.testng.annotations.AfterClass;
 import org.testng.annotations.BeforeClass;
+import org.testng.annotations.Parameters;
 import org.testng.annotations.Test;
 
 import com.zxp.test.util.WebDriverUtil;
 
 public class PassTest {
+	WebDriver driver;
   @Test
   public void isPassTest() {
 	  Reporter.log("测试方法isPassTest开始");
@@ -21,7 +23,7 @@ public class PassTest {
   @Test
   public void isPassTest2() {
 	  Reporter.log("测试方法isPassTest2开始");
-	  WebDriver driver = WebDriverUtil.getChromeWebDriver();
+	  driver = WebDriverUtil.getChromeWebDriver();
 	  driver.get("https://www.baidu.com/");
 	  
 	  WebElement kw = driver.findElement(By.id("kw"));
@@ -40,8 +42,14 @@ public class PassTest {
   }
   
   @BeforeClass
-  public void beforeClass() {
+  @Parameters("Browser") 
+  public void beforeClass(String browser) {
 	  Reporter.log("测试方法beforeClass开始");
+	  if("Chrome".equals(browser)){
+			driver = WebDriverUtil.getChromeWebDriver();
+		}else if ("IE".equals(browser)){
+			driver = WebDriverUtil.getIEWebDriver();
+		}
   }
 
   @AfterClass
