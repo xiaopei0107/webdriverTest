@@ -7,7 +7,7 @@
 <suite name="TestNgSuite" parallel="tests" thread-count="5"> -->
 <suite name="TestNgSuite" parallel="tests" >
 	<parameter name="Browser" value="Chrome"/>
-	<test name = "Selenium学习">		
+<!--	<test name = "Selenium学习">
 		<classes>
 			 <class name="com.zxp.test.learn.SeleniumTest" />
 			<class name="com.zxp.test.learn.SeleniumActionTest"/> 
@@ -20,20 +20,25 @@
 			<class name="com.zxp.test.learn.LearnTest1"/> 
 		</classes>
 		
-	</test>
+	</test>-->
 	
-	<!-- <test name = "测试发送邮件">		
+	<!-- <test name = "测试发送邮件">
 		<classes>
 			<class name="com.zxp.test.learn.WebDriverWaitTest"/> 
 		</classes>
 		
-	</test> -->
-	
-	<test name = "uploadAction">
+	</test>-->
+	<test name = "钢管登录">
+		<classes>
+			<class name="com.zxp.test.exchange.EnquiryTest"/>
+		</classes>
+
+	</test>
+	<!--<test name = "uploadAction">
 		<classes>
 			<class name="com.zxp.test.upload.TakeScreenshotTest"/>
 		</classes>		
-	</test>
+	</test>-->
 	 <listeners>
             <listener class-name="org.uncommons.reportng.HTMLReporter" />
             <listener class-name="org.uncommons.reportng.JUnitXMLReporter" />
