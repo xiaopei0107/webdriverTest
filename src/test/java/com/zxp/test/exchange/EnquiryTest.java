@@ -38,7 +38,7 @@ public class EnquiryTest {
      // Assert.assertEquals("管通天下-用户登录", driver.getTitle());
 
       EnquiryLoginPage loginPage = new EnquiryLoginPage(driver);
-      loginPage.login(loginUrl,"U00109","admin123");
+      loginPage.login(loginUrl,"UG6282","a8888888");
 
       Assert.assertTrue(driver.getPageSource().contains("欢迎您"));
 
@@ -46,7 +46,16 @@ public class EnquiryTest {
       if(welcomeEl.getText().contains("欢迎您")){
         Reporter.log("登录成功");
         Assert.assertTrue(true);
+      }else{
+        Reporter.log("登录失败");
+        throw new Exception("登录失败");
       }
+
+      //点击进入新建询价单页面
+     // WebElement addEnquiryEl = driver.findElement(By.cssSelector("div#tab-1 > ul.gongneng_c > li:nth-child(3) >a"));
+      WebElement addEnquiryEl = driver.findElement(By.xpath("//*[@id=\"tab-1\"]/ul/li[3]/a"));
+      addEnquiryEl.click();
+
 
     }catch (Exception e){
         e.printStackTrace();
